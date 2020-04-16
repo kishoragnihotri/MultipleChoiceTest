@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="17dp"
+    tools:context=".QuestionScreen">
+
+
+    <TextView
+        android:id="@+id/Que_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="score is: 0"
+        android:textSize="27sp"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/Que_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Que_score"
+        android:text="Question is:1/x"
+        android:textSize="27sp"
+        android:freezesText="true"/>
+    <TextView
+        android:id="@+id/difficulty_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Que_count"
+        android:text="Difficulty:"
+        android:textSize="27sp"
+        android:freezesText="true"/>
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/difficulty_count"
+        android:text="Difficulty:"
+        android:textSize="27sp"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/Que_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:freezesText="true"
+        android:text="00:30"
+        android:textSize="33sp" />
+
+    <TextView
+        android:id="@+id/questoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radiogroup"
+        android:layout_marginBottom="14dp"
+        android:freezesText="true"
+        android:text="Quetion will publish here\nQuetion will publish here\nQuetion will publish here\nQuetion will publish here"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/bt1"
+            android:freezesText="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 1" />
+
+        <RadioButton
+            android:id="@+id/bt2"
+            android:freezesText="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 2" />
+
+        <RadioButton
+            android:id="@+id/bt3"
+            android:freezesText="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 3" />
+
+        <RadioButton
+            android:id="@+id/bt4"
+            android:freezesText="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What the Hell is This! " />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confirm_quetion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup"
+        android:layout_centerInParent="true"
+        android:text="Confirm"
+        android:freezesText="true"/>
+
+</RelativeLayout>
